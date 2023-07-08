@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../../public/css/dashboard.module.css";
 
 const notStartedArr = ["Task 1", "Task 2", "Task 3", "Task 4"];
@@ -7,6 +8,7 @@ const completedArr = ["Task 1"];
 
 export default function DashBoard() {
   return (
+    <>
     <div className={styles.statusTable}>
       <div className={styles.statusColumn}>
         <div className={styles.statusLabel}>Not Started</div>
@@ -49,5 +51,9 @@ export default function DashBoard() {
         </div>
       </div>
     </div>
+    <div className={styles.btnContainer}>
+    <Link className={styles.homeLink} href="/">Home</Link>
+    </div>
+    </>
   );
 }
