@@ -15,7 +15,7 @@ export default function Home() {
             Dashboard
           </Link>
           <Login />
-          <Link className={styles.signUp} href="/dashboard">Don't have an account?</Link>
+          <Link className={styles.signUp} href="/dashboard" prefetch={false}>Don't have an account?</Link>
         </div>
       </div>
     </div>
