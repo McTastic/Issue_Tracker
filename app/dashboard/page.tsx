@@ -57,3 +57,51 @@ export default function DashBoard() {
     </>
   );
 }
+
+// const sections = [
+//   {
+//     label: "notStarted",
+//     tasks: ["Task 1", "Task 2", "Task 3", "Task 4"]
+//   },
+//   {
+//     label: "inProgress",
+//     tasks: ["Task 1", "Task 2"]
+//   },
+//   {
+//     label: "inReview",
+//     tasks: ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5"]
+//   },
+//   {
+//     label: "completed",
+//     tasks: ["Task 1"]
+//   }
+// ];
+
+
+// export default function DashBoard() {
+//   return (
+//     <>
+//       <div className={styles.statusTable}>
+//         {sections.map((section, index) => (
+//           <div className={styles.statusColumn} key={index}>
+//             <div className={styles.statusLabel}>{section.label}</div>
+//             <div className={section.label.replace(/\s+/g, "")}>
+//               <div className={styles.tasks}>
+//                 {section.tasks.map((task, taskIndex) => (
+//                   <div className={`task ${section.label.replace(/\s+/g, "")}`} key={taskIndex}>
+//                     {task}
+//                   </div>
+//                 ))}
+//               </div>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//       <div className={styles.btnContainer}>
+//         <Link className={styles.homeLink} href="/">
+//           Home
+//         </Link>
+//       </div>
+//     </>
+//   );
+// };
