@@ -21,6 +21,9 @@ export async function GET(request: NextRequest) {
       where: {
         id: String(id),
       },
+      include: {
+        issues: true,
+        },
     });
 
     if (!user) {

@@ -24,7 +24,8 @@ model Issue {
   id String @id @default(uuid())
   title String
   description String
-  state Status @relation(fields: [statusId], references: [id])
+  state String
+  // state Status @relation(fields: [statusId], references: [id])
   statusId String
   priority String
   createdAt DateTime @default(now())
@@ -37,8 +38,8 @@ model Issue {
 // 1. In Progress
 // 2. In Review
 // 3. Completed
-model Status {
-  id String @id @default(uuid())
-  name String
-  issues Issue[]
-}
+// model Status {
+//   id String @id @default(uuid())
+//   name String
+//   issues Issue[]
+// }

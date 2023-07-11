@@ -5,7 +5,11 @@ const prisma = new PrismaClient();
 const saltRounds = 10;
 // get all users
 export async function GET(request:Request){
-    const users = await prisma.user.findMany();
+    const users = await prisma.user.findMany({
+        include: {
+            issues: true,
+        },
+    });
     return new Response(JSON.stringify(users), {status: 200});
 }
 // create new user
