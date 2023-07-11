@@ -7,7 +7,7 @@ const saltRounds = 10;
 export async function GET(request:Request){
     const users = await prisma.user.findMany({
         include: {
-            issues: true,
+            projects: true,
         },
     });
     return new Response(JSON.stringify(users), {status: 200});

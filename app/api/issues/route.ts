@@ -11,27 +11,27 @@ export async function GET(request: Request) {
 // create new issue
 export async function POST(request: Request) {
   try {
-    const { title, description, state, priority, createdBy } =
+    const { title, description, state, priority, createdBy, project } =
       await request.json();
 
     const issue = await prisma.issue.create({
       data: {
         title,
         description,
-        state: {
-            create: {
-              name: state, // Assuming 'state' is a string
-            },
-          },
+        state,
         priority,
         createdBy: {
           connect: {
             id: createdBy,
           },
         },
+        project: {
+            connect: {
+                id: project,
+            },
       },
+    },
       include: {
-        state: true,
         createdBy: true,
         },
     });

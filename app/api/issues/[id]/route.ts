@@ -21,7 +21,6 @@ export async function GET(request: NextRequest) {
         id: String(id),
       },
       include: {
-        state: true,
         createdBy: true,
       },
     });
@@ -59,17 +58,17 @@ export async function PUT(request: NextRequest) {
       data: {
         title,
         description,
-        ...(state && {
-            state: {
-              create: {
-                name: state, // Assuming 'state' is a string
-              },
-            },
-          }),
+        // ...(state && {
+        //     state: {
+        //       create: {
+        //         name: state, // Assuming 'state' is a string
+        //       },
+        //     },
+        //   }),
+        state,
         priority,
       },
       include: {
-        state: true,
         createdBy: true,
       },
     });
