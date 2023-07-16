@@ -1,26 +1,62 @@
+"use client";
+
+import React, { useState } from 'react';
 import styles from "../../public/css/login.module.css";
 
 export default function Login() {
+  const [isUsernameFocused, setIsUsernameFocused] = useState(false);
+  const [isPasswordFocused, setIsPasswordFocused] = useState(false);
+
+  const handleUsernameFocus = () => {
+    setIsUsernameFocused(true);
+  };
+
+  const handleUsernameFocusOut = () => {
+    setIsUsernameFocused(false);
+  };
+
+  const handlePasswordFocus = () => {
+    setIsPasswordFocused(true);
+  };
+
+  const handlePasswordFocusOut = () => {
+    setIsPasswordFocused(false);
+  };
+
   return (
-    <div className={styles.loginBox}>
-      <h2>Login</h2>
-      <form>
-        <div className={styles.userBox}>
-          <input type="text" name="" required />
-          <label>Username</label>
+    <div className={styles.login_form_container}>
+      <div className={styles.login_form}>
+        <h2>Login</h2>
+        <div className={styles.input_group}>
+          <i className={`${styles.fa} fa-user ${isUsernameFocused ? styles.glowIcon : ''}`}></i>
+          <input
+            type="text"
+            placeholder="Username"
+            className={styles.input_text}
+            autoComplete="off"
+            onFocus={handleUsernameFocus}
+            onBlur={handleUsernameFocusOut}
+          />
         </div>
-        <div className={styles.userBox}>
-          <input type="password" name="" required />
-          <label>Password</label>
+        <div className={styles.input_group}>
+          <i className={`${styles.fa} fa-unlock-alt ${isPasswordFocused ? styles.glowIcon : ''}`}></i>
+          <input
+            type="password"
+            placeholder="Password"
+            className={styles.input_text}
+            autoComplete="off"
+            onFocus={handlePasswordFocus}
+            onBlur={handlePasswordFocusOut}
+          />
         </div>
-        <a href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Submit
-        </a>
-      </form>
+        <div className={`${styles.button_group} ${styles.login_button}`}>
+          <a>Submit</a>
+        </div>
+        <div className={styles.fotter}>
+          <a>Forgot Password?</a>
+          <a>SignUp</a>
+        </div>
+      </div>
     </div>
   );
 }

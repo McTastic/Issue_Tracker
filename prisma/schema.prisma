@@ -43,7 +43,6 @@ model Issue {
   title String
   description String
   state String
-  // state Status @relation(fields: [statusId], references: [id])
   priority String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -54,9 +53,3 @@ model Issue {
   project Project? @relation(fields: [projectId], references: [id])
   projectId String?
 }
-
-// model Status {
-//   id String @id @default(uuid())
-//   name String
-//   issues Issue[]
-// }

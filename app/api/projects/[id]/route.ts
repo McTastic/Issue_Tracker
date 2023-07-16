@@ -2,7 +2,7 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-// get a signle project
+// get a single project
 export async function GET(request: Request) {
   const projectId = request.url.split("/")[5];
   const project = await prisma.project.findUnique({
