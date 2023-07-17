@@ -50,7 +50,6 @@
     background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
     box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
     border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -62,21 +61,11 @@
 }
 .link:hover {
     background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
     transform: scale(1.1);
 }
-.signUp{
-    margin: 20px;
-    z-index: 1;
-}
-.signUp:visited{
-    text-decoration: none;
-    color: black;
-}
-
 @media only screen and (max-width: 600px) {
     .leftSide{
         display: none;
