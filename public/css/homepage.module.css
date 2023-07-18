@@ -29,7 +29,7 @@
 .homeImage{
     position: relative;
     bottom: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
     border-radius: 25px;
 }
 

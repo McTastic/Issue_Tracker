@@ -1,5 +1,5 @@
 :root{
-    --left-bg-color: linear-gradient(rgb(248, 87, 166), rgb(255, 88, 88));
+    --left-bg-color: linear-gradient(to bottom right,rgb(248, 87, 166) 45%, rgb(255, 88, 88));
 }
 *{
     font-size: 22px;
