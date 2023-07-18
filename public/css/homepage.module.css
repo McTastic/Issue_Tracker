@@ -6,10 +6,11 @@
 }
 .leftSide{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    background: rgb(37, 99, 99);
+    background: var(--left-bg-color);
     flex-basis: 50%;
-
 }
 .leftSide::before,
 .leftSide::after{
@@ -21,10 +22,17 @@
 }
 .leftSide::before{
     left: -50%;
-    background: rgba(37, 99, 99);
+    background: var(--left-bg-color);
     z-index: -1;
-    filter: drop-shadow(0 10px 20px rgb(10, 86, 99));
+    filter: drop-shadow(0 10px 30px rgb(4, 0, 21)); 
 }
+.homeImage{
+    position: relative;
+    bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
+}
+
 .rightSide{
     display: flex;
     flex-direction: column;

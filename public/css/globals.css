@@ -1,7 +1,10 @@
+:root{
+    --left-bg-color: linear-gradient(rgb(248, 87, 166), rgb(255, 88, 88));
+}
 *{
     font-size: 22px;
 }
 body{
     margin-bottom: -1px;
-    background: rgb(197, 207, 211);
+    background: rgb(17, 27, 61);
 }
