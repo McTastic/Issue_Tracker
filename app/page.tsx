@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className={styles.flex}>
       <div className={styles.leftSide}>
-        {/* <h1 style={{ fontSize: "55px" }}>This is home</h1> */}
+        <h1 className={styles.homeText}>This is home</h1>
         <Image className={styles.homeImage}src={LaptopImage} alt="laptop" />
-      </div>
+        </div>
       <div className={styles.rightSide}>
         <div className={styles.container}>
           {/* <Link className={styles.link} href="/login">Login</Link> */}

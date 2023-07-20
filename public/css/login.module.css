@@ -1,9 +1,9 @@
   .login_form_container{
       position: relative;
-      width: 400px;
-      height: 470px;
-      max-width: 400px;
-      max-height: 470px;
+      width: 500px;
+      height: 570px;
+      max-width: 500px;
+      max-height: 570px;
       background: #040717;
       border-radius: 50px 5px;
       display: flex;
@@ -47,7 +47,7 @@
       content: '';
       background-color: #0c1022;
       border-radius: 50px 5px;
-      inset: 5px;
+      inset: 8px;
       padding: 50px 40px;
       z-index: 10;
       color: #00ccff;

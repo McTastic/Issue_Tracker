@@ -6,11 +6,10 @@
 }
 .leftSide{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     background: var(--left-bg-color);
     flex-basis: 50%;
+    flex-wrap: wrap;
 }
 .leftSide::before,
 .leftSide::after{
@@ -26,13 +25,21 @@
     z-index: -1;
     filter: drop-shadow(0 10px 30px rgb(4, 0, 21)); 
 }
+.homeText{
+    margin-left: 20px;
+    color: rgb(239, 32, 132);
+    font-size: 100px;
+    text-shadow: 7px 5px 3px rgba(238, 175, 207, 0.8);
+    flex-basis: 100%;
+}
 .homeImage{
     position: relative;
-    bottom: 20px;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    top: -7rem;
+    height: 25rem;
+    width: 38rem;
+    box-shadow: 10px 10px 30px rgba(79, 13, 69, 0.8);
     border-radius: 25px;
 }
-
 .rightSide{
     display: flex;
     flex-direction: column;
@@ -74,7 +81,7 @@
     transition: all .4s ease-in-out;
     transform: scale(1.1);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1400px) {
     .leftSide{
         display: none;
     }
