@@ -13,7 +13,6 @@ export default function Home() {
         </div>
       <div className={styles.rightSide}>
         <div className={styles.container}>
-          {/* <Link className={styles.link} href="/login">Login</Link> */}
           <Link className={styles.link} href="/dashboard">
             Dashboard
           </Link>
