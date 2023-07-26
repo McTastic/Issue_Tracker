@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
 :root{
-    --left-bg-color: linear-gradient(to bottom right,rgb(248, 87, 166) 45%, rgb(255, 88, 88));
+    --left-bg-color: linear-gradient(to bottom right,rgb(58, 9, 73) 45%,rgb(101,9,199) 67%, rgb(191, 88, 255));
 }
 *{
     font-size: 22px;
+    font-family: 'Raleway', sans-serif;
 }
 body{
     margin-bottom: -1px;
-    background: rgb(17, 27, 61);
+    background:  rgb(27, 36, 54)
 }
