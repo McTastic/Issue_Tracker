@@ -17,14 +17,9 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 100%;
-}
-.leftSide::before{
-    left: -35%;
-    bottom: 0;
+    width: 65%;
     background: var(--left-bg-color);
     z-index: -1;
-    filter: drop-shadow(0 10px 30px rgb(4, 0, 21)); 
 }
 .homeText{
     margin-left: 20px;
