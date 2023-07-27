@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import styles from "../../public/css/login.module.css";
+import {signIn} from 'next-auth/react';
 
 export default function Login() {
   const [isUsernameFocused, setIsUsernameFocused] = useState(false);
@@ -50,12 +51,13 @@ export default function Login() {
           />
         </div>
         <div className={`${styles.button_group} ${styles.login_button}`}>
-          <a>Submit</a>
+          <button>Submit</button>
         </div>
         <div className={styles.fotter}>
           <a>Forgot Password?</a>
           <a>SignUp</a>
         </div>
+        <a style={{cursor: "pointer"}} onClick={()=>signIn()}>Use Google</a>
       </div>
     </div>
   );

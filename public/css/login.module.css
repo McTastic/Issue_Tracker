@@ -89,18 +89,18 @@
       margin-top: 20px;
       
   }
-  .login_button a{
+  .login_button button{
       text-decoration: none;
+      margin: auto;
+      color: #00ccff;
       z-index: 10;
       cursor: pointer;
-      font-size: 22px;
+      font-size: 28px;
       letter-spacing: 2px;
       border: 1px solid #00ccff;
       border-radius: 50px;
       background-color: #0c1022;
       display: flex;
-      justify-content: center;
-      align-items: center;
   }
   .login_button:hover{
     transform: scale(1.1);
